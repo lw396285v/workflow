@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package workflow;
+
+option go_package = "github.com/lw396285v/workflow/proto/workflow_go_proto";
+
+enum DataType {
+  int8_dt = 0;
+  int16_dt = 1;
+  int32_dt = 2;
+  int64_dt = 3;
+  uint8_dt = 4;
+  uint16_dt = 5;
+  uint32_dt = 6;
+  uint64_dt = 7;
+  float32_dt = 8;
+  float64_dt = 9;
+  string_dt = 10;
+  map_dt = 11;
+  bool_dt = 12;
+}
+
+message Variable {
+  DataType type = 1;
+
+}
